@@ -33,13 +33,13 @@ public class DemoApplication {
         return args -> {
             Stream.of("Hassan");
             Customer customer=new Customer();
-            String name;
+            String name = "";
             customer.setName(name);
             customer.setEmail(name+"@gmail.com");
             customersRepository.save(customer);
 
         };
-
+/*
         customersRepository.findAll().forEach(cust->{
             CurrentAccount currentAccount =new CurrentAccount();
             currentAccount.setBalance(Math.random()*9000);
@@ -59,7 +59,7 @@ public class DemoApplication {
 
 
 
-        });
+        });*/
     }
 
 }
